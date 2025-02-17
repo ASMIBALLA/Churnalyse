@@ -1,0 +1,412 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background-color: #004d40;
+    color: white;
+    
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+/* Company Name (Left Side) */
+.company-name {
+    font-family: 'MechaFont', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Navigation Menu */
+nav {
+    flex-grow: 1;
+    position: absolute;
+    right: 20px; /* Moves the nav to the right */
+    top: 20px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background:#004d40;
+    padding: 10px;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+/* Rounded Navigation Buttons */
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    background:#004d40;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+    background: #ff9800;
+    color: white;
+}
+
+/* Active Button (Clicked) */
+.nav-btn.active {
+    background: #ff5722;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* Hero Content */
+.hero-content h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;    
+}
+
+.hero-content h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin: 5 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 40px;
+}
+
+/* Learn More Button */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 5px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    list-style: none;
+}
+
+.btn:hover {
+    background: white;
+    color: #004d40;
+}
+
+/* Chatbot Button Styles */
+.chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: none;
+    color:none;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+/* Chatbot Button Styles */
+.chatbot-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.chatbot-btn img {
+    width: 80px;  /* Adjust the size */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.chatbot-btn img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 10px;
+}
+
+.feature-button {
+    width: 80%; /* Covers most of the screen width */
+    max-width: 600px; /* Restrict to a reasonable max width */
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px; /* Rounded buttons */
+    background: linear-gradient(135deg, #ffff00, #00D4FF); /* Gradient effect */
+    color: rgb(15, 1, 1);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.feature-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+}
+
+.feature-button:active {
+    transform: scale(0.95);
+}
+
+/* About Page Container */
+.about-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Main Heading */
+.about-header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f0f1f3;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Subheading */
+.about-subheader {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#f0f1f3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* About Text */
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color:#f0f1f3;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* About Content Box */
+.about-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+    color: black;
+    
+}
+.about-box p {
+    margin-top: 15px; /* Adds spacing between paragraphs */
+}
+
+.about-box ul li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Features & Why Choose Us Lists */
+.features-list, .why-choose {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.features-list li, .why-choose li {
+    padding: 10px 0;
+    color: #333;
+}
+
+/* CTA Section */
+.cta-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color:black;
+    background-color: #2980b9;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #1a5276;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        width: 90%;
+    }
+
+    .about-header {
+        font-size: 2.2rem;
+    }
+
+    .about-subheader {
+        font-size: 1.3rem;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Contact Section */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contact Information */
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - ChurnAnalyse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h2 class="company-name">ChurnAnalyse</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn active">Home</a></li>
+                <li><a href="features.html" class="nav-btn">Features</a></li>
+                <li><a href="http://localhost:8501" target="_blank" class="nav-btn">Churn Analysis</a></li> <!-- Opens Streamlit App -->
+                <li><a href="about.html" class="nav-btn">About</a></li>
+                <li><a href="service.html" class="nav-btn">Service</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="features-container">
+        <section class="features-container">
+            <button class="feature-button" onclick="location.href='http://localhost:8501'">
+                AI-based Churn Prediction
+            </button>
+            <button class="feature-button" onclick="location.href='http://localhost:8501'">
+                Customer Behavior Analytics
+            </button>
+            <button class="feature-button" onclick="location.href='http://localhost:8501'">
+                Real-time Data Processing
+            </button>
+            <button class="feature-button" onclick="location.href='http://localhost:8501'">
+                Retention Strategy Recommendations
+            </button>
+        </section>
+        
+    </div>
+</section>
+
+<a href="#" class="chatbot-btn">
+    <img src="chatbot.png" alt="Chatbot">
+</a>
+
+<script>
+function redirectToApp(feature) {
+    // Replace these URLs with your trained model app links
+    const featureUrls = {
+        "ai-prediction": "http://localhost:8501/ai-prediction",
+        "customer-analytics": "http://localhost:8501/customer-analytics",
+        "real-time-data": "http://localhost:8501/real-time-data",
+        "retention-strategy": "http://localhost:8501/retention-strategy"
+    };
+
+    if (featureUrls[feature]) {
+        window.location.href = featureUrls[feature];
+    } else {
+        alert("Feature not available.");
+    }
+}
+</script>
+
+</body>
+</html>

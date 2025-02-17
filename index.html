@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChurnAnalyse</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h2 class="company-name">ChurnAnalyse</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-btn active">Home</a></li>
+                    <li><a href="features.html" class="nav-btn">Features</a></li>
+                    <li><a href="http://localhost:8501" target="_blank" class="nav-btn">Churn Analysis</a></li> <!-- Opens Streamlit App -->
+                    <li><a href="about.html" class="nav-btn">About</a></li>
+                    <li><a href="service.html" class="nav-btn">Service</a></li> <!-- Fixed link -->
+                    <li><a href="contact.html" class="nav-btn">Contact</a></li>
+                    <li><a href="login.html" class="nav-btn login-btn">Login</a></li> <!-- Login Button -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h3>Welcome to Churn Analysis</h3>
+            <h4>Predict. Prevent. Retain. Empower Your Business with Churn Insights!</h4>
+            <p>ChurnAnalyse uses AI, machine learning, NLP, and predictive analytics to detect at-risk customers and reduce churn. It integrates AI bots, deep learning models, and real-time data processing for automated insights. With chatbots, sentiment analysis, and proactive retention strategies, businesses can enhance customer engagement and maximize retention.</p>
+            <a href="about.html"class="btn">LEARN MORE</a>
+        </div>
+    </section>
+
+    <!-- Chatbot Help Button -->
+    <a href="#" onclick="openChat()" class="chatbot-btn">
+        <img src="chatbot.png" alt="Chatbot">
+    </a>
+
+    <script>
+        // Add 'active' class to clicked button
+        document.querySelectorAll(".nav-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                document.querySelectorAll(".nav-btn").forEach(btn => btn.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+
+        function openChat() {
+            alert("Chatbot feature coming soon!");
+        }
+    </script>
+
+</body>
+</html>
